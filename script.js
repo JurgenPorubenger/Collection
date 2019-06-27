@@ -56,7 +56,20 @@
 
 // updateRecords(2548, "artist", "");
 
-function isPrime(num) {
+
+
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+let arr2 = [];
+for (let i=0; i<arr.length; i++) {
+  if (isPrime(arr[i])) {
+    arr2.push(arr[i]);
+  }
+ }
+ console.log(arraySum(arr2));
+
+ function isPrime(num) {
   if(num < 2) return false;
   for (let i=2; i<num; i++) {
       if(num%i==0)
@@ -65,28 +78,11 @@ function isPrime(num) {
   return num;
 }
 
-let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-for (let i=0; i<arr.length; i++) {
-  if (isPrime(arr[i])) {
-    numberSum()
-    // let arr2 = [];
-    // arr2.push(arr[i]);
-    // console.log('arr2');
-    console.log(isPrime(arr[i]));
-  }
- }
-// let positiveArr = arr.filter(function(number) {
-//   if (number/number==1&&)
-//   return number > 0;
-// });
-
-
-
-// console.log(isPrime(7));
-function numberSum(N) {
-  var total = 0;
-    for(var i = 1; i <= N; i++){
-      total += i;
+function arraySum(N) {
+  let total = 0;
+    for(let i = 0; i < N.length; i++) {
+      total += N[i];
     }
     return total;
 }
+
