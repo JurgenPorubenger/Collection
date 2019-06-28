@@ -85,4 +85,7 @@ function arraySum(N) {
     }
     return total;
 }
-
+//=========================REDUSER=====================//
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+console.log(arr2.reduce(reducer));
+//=========================REDUSER=====================//
